@@ -12,6 +12,12 @@ startBtn.addEventListener("click", (event) => {
   screens[0].classList.add("up");
 });
 
+//tel
+startBtn.addEventListener("touch", (event) => {
+  event.preventDefault();
+  screens[0].classList.add("up");
+});
+
 timeList.addEventListener("click", (event) => {
   if (event.target.classList.contains("time-btn")) {
     time = parseInt(event.target.getAttribute("data-time"));
